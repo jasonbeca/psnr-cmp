@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.venv-linux/
+.env_ubuntu/
+.env_centos/
+.env_win/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local scratch
+test/
+
+# Test data (large files)
+*.yuv
+case*/
+
+# OS
+.DS_Store
+Thumbs.db
+*.gif
+
+# PyInstaller build artifacts
+build/
+dist/*
+!dist/centos/
+!dist/centos/**
+*.spec.bak
+vidcompare_linux.spec
+installer_output/
+
+# AppImage
+*.AppImage
+*.AppDir/
+appimagetool-*.AppImage
