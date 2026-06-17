@@ -110,13 +110,13 @@ This prevents the need to re-install packages (`pip install -r requirements.txt`
 4.  Click **Load & Compare**.
 5.  **Normal Mode**: Scroll/Drag to navigate. Toggle "Show PSNR Overlay".
 6.  **Detail Mode**: Right-click any block to enter. Right-click again to exit.
-## CentOS 7 离线编译 (无需复制源码)
+## CentOS 7 Offline Build (No Source Copy Required)
 
-1.  **准备**: 确保 `dist/centos` 文件夹已上传至服务器项目根目录下的 `dist/` 中。
-    *(即目录结构应为: `~/psnr-cmp/dist/centos/`，里面包含 `wheels` 和 `Miniconda`)*
-2.  **编译**:
-    在项目根目录 (`~/psnr-cmp`) 直接运行：
+1.  **Prepare**: Ensure the `dist/centos` folder has been uploaded to the `dist/` directory in your server's project root.
+    *(The directory structure should be: `~/psnr-cmp/dist/centos/`, containing `wheels` and `Miniconda`)*
+2.  **Build**:
+    Run the following command directly in the project root directory (`~/psnr-cmp`):
     ```bash
     bash build-centos.sh
     ```
-    脚本会自动调用 `dist/centos` 里的环境，编译当前目录的代码，生成的 Binary 会在 `dist/linux_output/` 下。
+    The script will automatically use the environment within `dist/centos` to compile the code in the current directory. The generated binary will be located in `dist/linux_output/`.
